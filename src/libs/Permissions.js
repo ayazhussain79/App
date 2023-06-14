@@ -91,7 +91,7 @@ function canUsePolicyExpenseChat(betas) {
  * @returns {Boolean}
  */
 function canUsePasswordlessLogins(betas) {
-    return _.contains(betas, CONST.BETAS.PASSWORDLESS) || _.contains(betas, CONST.BETAS.ALL);
+    return true;
 }
 
 /**
