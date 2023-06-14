@@ -64,7 +64,7 @@ function canUseWallet(betas) {
  * @returns {Boolean}
  */
 function canUseCommentLinking(betas) {
-    return _.contains(betas, CONST.BETAS.BETA_COMMENT_LINKING) || canUseAllBetas(betas);
+    return true;
 }
 
 /**
@@ -75,7 +75,7 @@ function canUseCommentLinking(betas) {
  * @returns {Boolean}
  */
 function canUsePolicyRooms(betas) {
-    return _.contains(betas, CONST.BETAS.POLICY_ROOMS) || _.contains(betas, CONST.BETAS.ALL);
+    return true;
 }
 
 /**
@@ -83,7 +83,7 @@ function canUsePolicyRooms(betas) {
  * @returns {Boolean}
  */
 function canUsePolicyExpenseChat(betas) {
-    return _.contains(betas, CONST.BETAS.POLICY_EXPENSE_CHAT) || canUseAllBetas(betas);
+    return true;
 }
 
 /**
@@ -91,7 +91,7 @@ function canUsePolicyExpenseChat(betas) {
  * @returns {Boolean}
  */
 function canUsePasswordlessLogins(betas) {
-    return _.contains(betas, CONST.BETAS.PASSWORDLESS) || _.contains(betas, CONST.BETAS.ALL);
+    return true;
 }
 
 /**
@@ -99,7 +99,7 @@ function canUsePasswordlessLogins(betas) {
  * @returns {Boolean}
  */
 function canUseTasks(betas) {
-    return _.contains(betas, CONST.BETAS.TASKS) || _.contains(betas, CONST.BETAS.ALL);
+    return true;
 }
 
 export default {
